@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - URL Shortener</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin Panel</h1>
+      <div id="form">
+        <h2>Register/Login</h2>
+        <div id="buttons">
+          <button id="loginButton">Login</button>
+          <button id="registrationButton">Register</button>
+        </div>
+        <div id="loginForm" style="display: none">
+          <input
+            type="text"
+            id="email"
+            style="display: none"
+            placeholder="E-mail"
+            required
+          />
+          <input type="text" id="username" placeholder="Username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+
+          <button id="submit">Submit</button>
+          <div id="loginMsg"></div>
+        </div>
+      </div>
+      <div id="adminPanel" style="display: none">
+        <h2>Manage URLs</h2>
+        <button id="logoutButton">Logout</button>
+        <div class="table-container">
+          <table id="urlTable">
+            <thead>
+              <tr>
+                <th>Short Code</th>
+                <th>Long URL</th>
+                <th>Created At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="urlList"></tbody>
+          </table>
+        </div>
+        <div id="editForm" style="display: none">
+          <h3>Edit URL</h3>
+          <input type="text" id="editShortCode" readonly />
+          <input
+            type="url"
+            id="editLongUrl"
+            placeholder="New Long URL"
+            required
+          />
+          <button id="saveEditButton">Save</button>
+          <button id="cancelEditButton">Cancel</button>
+        </div>
+        <div id="adminError" style="color: red"></div>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>

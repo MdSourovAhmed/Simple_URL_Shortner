@@ -1,0 +1,10 @@
+# robots.txt for URL Shortener Admin Panel
+
+# Block all crawlers from accessing admin area
+User-agent: *
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /admin.js
+
+# Allow everything else by default
+Allow: /

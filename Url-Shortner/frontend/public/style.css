@@ -1,0 +1,263 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  word-break: break-all;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+ */
+/* 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+
+#result,
+#error,
+#loginError,
+#adminError {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#editForm {
+  margin-top: 20px;
+}
+
+#editShortCode {
+  background-color: #f4f4f4;
+}
+
+.admin-link {
+  display: inline-block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+} */
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#result, #error, #loginError, #adminError {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed; /* Prevent table from exceeding container */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden; /* Handle overflow content */
+  text-overflow: ellipsis; /* Truncate long text */
+  white-space: nowrap; /* Prevent wrapping unless specified */
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 10%; /* Short Code column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 70%; /* Long URL column */
+  white-space: normal; /* Allow wrapping for long URLs */
+  word-break: break-all; /* Break long URLs */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 10%; /* Created At column */
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 10%; /* Actions column */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#urlTable {
+  display: block;
+  max-width: 100%; /* Ensure table respects container width */
+}
+
+#editForm {
+  margin-top: 20px;
+}
+
+#editShortCode {
+  background-color: #f4f4f4;
+}
+
+.admin-link {
+  display: inline-block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive table container */
+.table-container {
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  margin-top: 20px;
+}
