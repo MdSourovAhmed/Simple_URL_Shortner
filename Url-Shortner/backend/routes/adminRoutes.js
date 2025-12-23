@@ -4,7 +4,6 @@ const {registerAdmin, loginAdmin, listUrls, editUrl, deleteUrl } = require('../c
 const { authenticateAdmin } = require('../middleware/auth');
 const {validateAdminRegister, validateAdminLogin, validateEditUrl, checkValidationResult } = require('../middleware/validate');
 
-// Debug: Log imported functions to ensure they are defined
 console.log('adminController:', { loginAdmin, listUrls, editUrl, deleteUrl });
 console.log('authenticateAdmin:', authenticateAdmin);
 
