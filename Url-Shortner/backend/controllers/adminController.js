@@ -18,7 +18,7 @@ const registerAdmin = async (req, res) => {
       return res.status(400).json({ error: `${username} already exists. try a different one.` });
     }
 
-    // Hash password
+    // Hashing password
     // const hashedPassword = await bcrypt.hash(password, 10);
 
     // Save admin
