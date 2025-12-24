@@ -21,7 +21,7 @@ const registerAdmin = async (req, res) => {
     // Hashing password
     // const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Save admin
+    // Save admin data
     const newAdmin = new Admin({
       email,
       username,
